@@ -159,22 +159,6 @@ history.add_ai_message("""Now tell me a plot summary of a movie you're consideri
 summary_memory = ConversationSummaryMemory(
     llm=llm,
     memory_key="recommendation_summary",
-    input_key="input",
-    buffer=f"The human answered {len(personal_questions)} personal questions). Use them to rate, from 1 to {max_rating}, how much they like a movie they describe to you.",
-    return_messages=True)
-
-# you could choose to store some of the q/a in memory as well, in addition to original questions
-class MementoBufferMemory(ConversationBufferMemory):
-    def save_context(self, inputs: Dict[str, Any], outputs: Dict[str, str]) -> None:
-        # The input_key="input" parameter of ConversationSummaryMemory and MementoBufferMemory/ConversationBufferMemory constructor is used by the parent class's _get_input_output method
-        # Its presence is a requirement of the parent class method _get_input_output even if you don't use its full result.
-        input_str, output_str = self._get_input_output(inputs, outputs)
-        self.chat_memory.add_ai_message(output_str)
-
-# the ENTIRE chat history it holds will be injected into the prompt under this variable name: questions_and_answers. It will become longer and longer
-conversational_memory = MementoBufferMemory(
-    chat_memory=history,
-    memory_key="questions_and_answers",
     # input_key acts as a signpost, pointing the memory to the correct piece of data that represents the user's side of the conversation.
     # PROMPT = PromptTemplate(
     #     input_variables=["recommendation_summary", "input", "questions_and_answers"],
@@ -182,6 +166,22 @@ conversational_memory = MementoBufferMemory(
     # )
     # When the chain runs, the memory automatically provides the values for recommendation_summary and questions_and_answers. The input variable is the one you provide with new information each time.
     # The memory needs to distinguish between the new user input (input) and the variables that the memory itself provided (recommendation_summary, questions_and_answers). The input_key parameter resolves this ambiguity, ensuring that only the new user message is appended to the history for that turn, preventing duplication and confusion.
+    input_key="input",
+    buffer=f"The human answered {len(personal_questions)} personal questions). Use them to rate, from 1 to {max_rating}, how much they like a movie they describe to you.",
+    return_messages=True)
+
+# you could choose to store some of the q/a in memory as well, in addition to original questions
+class MementoBufferMemory(ConversationBufferMemory):
+    def save_context(self, inputs: Dict[str, Any], outputs: Dict[str, str]) -> None:
+        input_str, output_str = self._get_input_output(inputs, outputs)
+        self.chat_memory.add_ai_message(output_str)
+
+# the ENTIRE chat history it holds will be injected into the prompt under this variable name: questions_and_answers. It will become longer and longer
+conversational_memory = MementoBufferMemory(
+    chat_memory=history,
+    memory_key="questions_and_answers",
+    # The input_key="input" parameter of ConversationSummaryMemory and MementoBufferMemory/ConversationBufferMemory constructor is used by the parent class's _get_input_output method
+    # Its presence is a requirement of the parent class method _get_input_output even if you don't use its full result.
     input_key="input"
 )
 

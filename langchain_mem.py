@@ -146,6 +146,7 @@ max_rating = 100
 personal_answers = ['thriller', 'blue', 'inception', 'dogs', 'fish tacos', 'cold beer']
 print(personal_answers)
 
+# static, seed chat history. will be combined with AI output for every run
 history = ChatMessageHistory()
 history.add_user_message(f"""You are AI that will recommend user a movie based on their answers to personal questions. Ask user {len(personal_questions)} questions""")
 for i in range(len(personal_questions)):
@@ -153,6 +154,8 @@ for i in range(len(personal_questions)):
     history.add_user_message(personal_answers[i])
 
 history.add_ai_message("""Now tell me a plot summary of a movie you're considering watching, and specify how you want me to respond to you with the movie rating""")
+
+# will be updated for every new conversation / run.
 summary_memory = ConversationSummaryMemory(
     llm=llm,
     memory_key="recommendation_summary",
@@ -166,6 +169,7 @@ class MementoBufferMemory(ConversationBufferMemory):
         input_str, output_str = self._get_input_output(inputs, outputs)
         self.chat_memory.add_ai_message(output_str)
 
+# the ENTIRE chat history it holds will be injected into the prompt under this variable name: questions_and_answers. It will become longer and longer
 conversational_memory = MementoBufferMemory(
     chat_memory=history,
     memory_key="questions_and_answers",

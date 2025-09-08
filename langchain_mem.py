@@ -165,7 +165,8 @@ summary_memory = ConversationSummaryMemory(
     #     template=RECOMMENDER_TEMPLATE
     # )
     # When the chain runs, the memory automatically provides the values for recommendation_summary and questions_and_answers. The input variable is the one you provide with new information each time.
-    # The memory needs to distinguish between the new user input (input) and the variables that the memory itself provided (recommendation_summary, questions_and_answers). The input_key parameter resolves this ambiguity, ensuring that only the new user message is appended to the history for that turn, preventing duplication and confusion.
+    # The memory needs to distinguish between the new user input (input) and the variables that the memory itself provided (recommendation_summary, questions_and_answers).
+    # The input_key parameter resolves this ambiguity, ensuring that only the new user message is appended to the history for that turn, preventing duplication and confusion.
     input_key="input",
     buffer=f"The human answered {len(personal_questions)} personal questions). Use them to rate, from 1 to {max_rating}, how much they like a movie they describe to you.",
     return_messages=True)

@@ -60,12 +60,12 @@ if __name__ == "__main__":
     db.add_listings()
 
     # Example search
-    query = "I am looking for a family home with a big backyard in a quiet neighborhood."
-    search_results = db.search_listings(query)
-    print("\nSearch Results:")
-    for i, metadata in enumerate(search_results['metadatas'][0]):
-        print(f"Result {i+1}:")
-        print(f"  Neighborhood: {metadata['neighborhood']}")
-        print(f"  Price: ${metadata['price']}")
-        print(f"  Description: {metadata['description'][:100]}...") # Print first 100 chars
-        print("---")
+    # query = "I am looking for a family home with a big backyard in a quiet neighborhood."
+    # search_results = db.search_listings(query)
+    # print("\nSearch Results:")
+    # for i, metadata in enumerate(search_results['metadatas'][0]):
+    #     print(f"Result {i+1}:")
+    #     print(f"  Neighborhood: {metadata['neighborhood']}")
+    #     print(f"  Price: ${metadata['price']}")
+    #     print(f"  Description: {metadata['description'][:100]}...") # Print first 100 chars
+    #     print("---")

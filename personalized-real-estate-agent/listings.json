@@ -1,0 +1,92 @@
+[
+    {
+        "neighborhood": "Maple Ridge",
+        "price": 650000,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "house_size": 2500,
+        "description": "Step into this spacious 4-bedroom, 3-bathroom home in the desirable Maple Ridge neighborhood. The open floor plan is perfect for entertaining, featuring a gourmet kitchen with granite countertops and stainless steel appliances. The master suite offers a luxurious retreat with a spa-like bathroom and walk-in closet. Enjoy the outdoor living space with a deck overlooking the lush backyard, ideal for summer BBQs and relaxation.",
+        "neighborhood_description": "Maple Ridge is known for its family-friendly atmosphere and top-rated schools. Residents enjoy easy access to parks, shopping centers, and dining options. Explore the nearby Maple Ridge Trail for outdoor adventures or unwind at the community pool. Experience suburban living at its finest in Maple Ridge."
+    },
+    {
+        "neighborhood": "Downtown District",
+        "price": 1000000,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "house_size": 1800,
+        "description": "Luxury meets urban living in this chic 2-bedroom, 2-bathroom condo located in the heart of the vibrant Downtown District. The modern design features high-end finishes, floor-to-ceiling windows, and a private balcony with stunning city views. The building offers upscale amenities including a rooftop pool, fitness center, and concierge services. Immerse yourself in the bustling city life while enjoying the convenience of downtown living at its best.",
+        "neighborhood_description": "The Downtown District is a bustling neighborhood with a diverse mix of dining, shopping, and entertainment options. Explore the local art galleries, catch a show at the historic theater, or dine at trendy restaurants serving up culinary delights. With easy access to public transportation and cultural attractions, living in the Downtown District provides an unparalleled urban experience."
+    },
+    {
+        "neighborhood": "Lakeview Estates",
+        "price": 850000,
+        "bedrooms": 5,
+        "bathrooms": 4,
+        "house_size": 3500,
+        "description": "Welcome home to this stunning 5-bedroom, 4-bathroom estate in the prestigious Lakeview Estates neighborhood. Boasting a grand entryway, formal living and dining rooms, and a gourmet kitchen with high-end appliances, this home is an entertainer's dream. The expansive master suite features a spa-like bathroom and a private balcony overlooking the serene lake. Relax in the outdoor oasis with a pool, spa, and lush landscaping, creating a private retreat for ultimate luxury living.",
+        "neighborhood_description": "Lakeview Estates is a gated community known for its luxurious homes and picturesque views. Residents enjoy access to the private lake for boating and fishing, as well as walking trails and a community clubhouse. Experience upscale living in a tranquil setting at Lakeview Estates."
+    },
+    {
+        "neighborhood": "Historic Quarter",
+        "price": 500000,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "house_size": 1800,
+        "description": "Step back in time with this charming 3-bedroom, 2-bathroom home located in the quaint Historic Quarter. The historic architecture and period details blend seamlessly with modern updates, offering a unique blend of old-world charm and contemporary comforts. The cozy living room features a fireplace, while the renovated kitchen boasts stainless steel appliances and granite countertops. Enjoy the private courtyard for outdoor entertaining and relaxation in this historic gem.",
+        "neighborhood_description": "The Historic Quarter is a picturesque neighborhood filled with historic homes, cobblestone streets, and inviting cafes. Take a leisurely stroll through the tree-lined streets to explore boutiques, art galleries, and local eateries. Immerse yourself in the rich history and character of the Historic Quarter, where past and present converge."
+    },
+    {
+        "neighborhood": "Mountain View Heights",
+        "price": 750000,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "house_size": 2800,
+        "description": "Enjoy panoramic mountain views from this beautifully appointed 4-bedroom, 3-bathroom home in Mountain View Heights. The open concept living space features vaulted ceilings, hardwood floors, and a gourmet kitchen with granite countertops and stainless steel appliances. The spacious master suite offers a luxurious retreat, while the outdoor deck is perfect for al fresco dining and soaking in the breathtaking views. Experience mountain living at its finest in this tranquil sanctuary.",
+        "neighborhood_description": "Mountain View Heights is a nature lover's paradise with access to hiking trails, parks, and outdoor recreational activities. Residents can enjoy the serenity of mountain living while still being close to amenities such as shopping centers and dining options. Embrace the beauty of the great outdoors in Mountain View Heights."
+    },
+    {
+        "neighborhood": "Waterfront District",
+        "price": 1200000,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "house_size": 2200,
+        "description": "Live the waterfront lifestyle in this modern 3-bedroom, 3-bathroom townhouse located in the exclusive Waterfront District. The sleek design features an open floor plan, high ceilings, and floor-to-ceiling windows offering panoramic water views. The gourmet kitchen is equipped with top-of-the-line appliances and a spacious island for culinary enthusiasts. Relax on the rooftop terrace with stunning sunset views or take a leisurely stroll along the waterfront promenade.",
+        "neighborhood_description": "The Waterfront District is a coveted waterfront community known for its luxury residences and scenic views. Residents have access to marinas, waterfront parks, and upscale dining options within walking distance. Experience the tranquility of waterfront living combined with the convenience of urban amenities in the Waterfront District."
+    },
+    {
+        "neighborhood": "Oak Park",
+        "price": 600000,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "house_size": 2000,
+        "description": "Nestled in the charming Oak Park neighborhood, this 3-bedroom, 2-bathroom bungalow offers the perfect blend of vintage charm and modern updates. The sunlit living room features a cozy fireplace and original hardwood floors, while the updated kitchen boasts stainless steel appliances and quartz countertops. The backyard oasis is ideal for outdoor entertaining with a patio, fire pit, and mature landscaping, creating a peaceful retreat in the heart of Oak Park.",
+        "neighborhood_description": "Oak Park is a historic neighborhood known for its tree-lined streets, parks, and community events. Residents enjoy easy access to local boutiques, cafes, and cultural attractions. Explore the nearby Oak Park Arboretum or attend a neighborhood block party to experience the tight-knit community spirit of Oak Park."
+    },
+    {
+        "neighborhood": "Harbor View",
+        "price": 950000,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "house_size": 3000,
+        "description": "Welcome to this elegant 4-bedroom, 3-bathroom residence in the prestigious Harbor View neighborhood. The grand foyer leads to a formal living room with a fireplace, a gourmet kitchen with high-end appliances, and a spacious family room perfect for gatherings. The luxurious master suite features a spa-like bathroom and a private balcony overlooking the harbor. Dine al fresco in the landscaped backyard with water views, creating a serene escape for relaxation and entertainment.",
+        "neighborhood_description": "Harbor View is a sought-after waterfront community offering boating, waterfront dining, and upscale shopping options. Residents can enjoy the marina lifestyle with easy access to yacht clubs, sailing excursions, and coastal trails. Experience coastal living at its finest in Harbor View."
+    },
+    {
+        "neighborhood": "Sunset Hills",
+        "price": 700000,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "house_size": 2200,
+        "description": "Embrace the serene setting of Sunset Hills in this 3-bedroom, 2-bathroom ranch-style home. The light-filled living spaces feature vaulted ceilings, hardwood floors, and a cozy fireplace, creating a welcoming ambiance. The updated kitchen offers granite countertops and stainless steel appliances, while the backyard retreat includes a deck and mature landscaping for outdoor enjoyment. Unwind in the peaceful surroundings of Sunset Hills, where nature meets comfort.",
+        "neighborhood_description": "Sunset Hills is a tranquil neighborhood nestled among rolling hills and scenic landscapes. Residents can enjoy hiking trails, parks, and outdoor activities while being just a short drive away from shopping centers and dining options. Experience the beauty of nature and the peacefulness of Sunset Hills."
+    },
+    {
+        "neighborhood": "Garden Grove",
+        "price": 800000,
+        "bedrooms": 5,
+        "bathrooms": 4,
+        "house_size": 3200,
+        "description": "Discover the beauty of this 5-bedroom, 4-bathroom estate in the sought-after Garden Grove neighborhood. The grand entryway leads to a formal living room, dining room, and a chef's kitchen with custom cabinetry and high-end appliances. The luxurious master suite features a spa-like bathroom and a private balcony overlooking the landscaped gardens. Entertain guests in the outdoor paradise with a pool, spa, and outdoor kitchen, perfect for gatherings and relaxation.",
+        "neighborhood_description": "Garden Grove is a prestigious neighborhood known for its manicured landscapes, tree-lined streets, and upscale homes. Residents can enjoy the tranquility of the neighborhood parks, local boutiques, and gourmet restaurants. Experience luxury living in the scenic surroundings of Garden Grove."
+    }
+]

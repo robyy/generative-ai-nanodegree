@@ -1,8 +1,8 @@
 import json
 import openai
-from config import ***REMOVED***, OPENAI_API_BASE
+from config import OPENAI_API_KEY, OPENAI_API_BASE
 
-openai.api_key = ***REMOVED***
+openai.api_key = OPENAI_API_KEY
 openai.api_base = OPENAI_API_BASE
 
 def generate_listings(num_listings=10):

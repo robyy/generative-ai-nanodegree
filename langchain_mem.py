@@ -9,7 +9,7 @@ from typing import Any, Dict, Optional, Tuple
 import requests
 import os
 
-os.environ["***REMOVED***"] = "YOUR API KEY"
+os.environ["OPENAI_API_KEY"] = "YOUR API KEY"
 os.environ["OPENAI_API_BASE"] = "https://openai.vocareum.com/v1"
 
 def get_movie_plot(movie_name):

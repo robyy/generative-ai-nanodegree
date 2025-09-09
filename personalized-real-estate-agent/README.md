@@ -42,8 +42,8 @@ This is the main entry point of the application. It orchestrates the entire proc
 4.  **Configure OpenAI API Key:**
     Create a `.env` file in the root directory of the project and add your OpenAI API key and base URL:
     ```
-    ***REMOVED***="YOUR_***REMOVED***"
-    ***REMOVED*** # This is a special base URL for the provided key
+    OPENAI_API_KEY="YOUR_API_KEY"
+    OPENAI_API_BASE="https://api.openai.com/v1" # This is a special base URL for the provided key
     ```
     **Note:** The provided API key is a special one and only works with the specified `OPENAI_API_BASE` URL.
 

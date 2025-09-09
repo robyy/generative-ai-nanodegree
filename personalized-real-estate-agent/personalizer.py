@@ -1,11 +1,11 @@
 import openai
 
-from config import ***REMOVED***, OPENAI_API_BASE
+from config import OPENAI_API_KEY, OPENAI_API_BASE
 
 
 class ListingPersonalizer:
     def __init__(self):
-        openai.api_key = ***REMOVED***
+        openai.api_key = OPENAI_API_KEY
         openai.api_base = OPENAI_API_BASE
 
     def personalize_listing(self, listing, buyer_preferences_string):
